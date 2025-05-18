@@ -1,0 +1,63 @@
+/* Reset default margin and padding for body and html */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  font-family: 'Inter', sans-serif; /* Ya apni preferred font */
+  background-color: #f9fafb; /* Light gray background, optional */
+  color: #333; /* Default text color */
+}
+
+/* Make sure all elements use border-box */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Remove default list styles */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Anchor tag styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Buttons and inputs reset */
+button, input, textarea {
+  font-family: inherit;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+/* Scrollbar (optional) for smooth look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 4px;
+}
+
+/* You can add more global styles as needed */
+
+
+
+
