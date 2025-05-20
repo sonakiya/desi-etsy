@@ -6,6 +6,7 @@ import Hero from "../components/Hero";
 const Homepage = () => {
   return (
     <>
+    
       <Navbar />
        <Hero/>
       <Footer/>

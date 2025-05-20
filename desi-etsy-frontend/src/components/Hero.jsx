@@ -14,7 +14,7 @@ const Hero = () => {
           <button className="btn-primary" onClick={() => window.location.href = "/signup"}>
             Get Started
           </button>
-          <button className="btn-secondary" onClick={() => window.location.href = "/products"}>
+          <button className="btn-secondary" onClick={() => window.location.href = "/login"}>
             Browse Products
           </button>
         </div>
