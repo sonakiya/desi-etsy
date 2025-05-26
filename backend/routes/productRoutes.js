@@ -1,6 +1,8 @@
 const express = require("express");
 const router = express.Router();
+
 const upload = require("../middleware/upload");
+
 
 const {
   getAllProducts,
@@ -20,7 +22,7 @@ router.put("/update/:id", authMiddleware,upload.single('image'), updateProduct);
 router.delete("/delete/:id", authMiddleware, deleteProduct);
 
 // Public routes
-router.get("/allproducts", getAllProducts);
+router.get("/", getAllProducts);
 router.get("/:id", getProductById); 
 
 module.exports = router;

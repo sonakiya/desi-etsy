@@ -23,10 +23,10 @@ const Navbar = () => {
           </button>
         </div>
 
-        <button className="nav-btn cart-btn">
+         <button className="nav-btn cart-btn">
           <FaShoppingCart />
           <span>Cart</span>
-        </button>
+        </button> 
 
        <button className="nav-btn login-btn" onClick={() => navigate("/login")}>
   Login

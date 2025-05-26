@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "../components/Footer";
 
 const API_BASE = "/api/products";
 
@@ -109,6 +110,7 @@ const ArtisanDashboard = () => {
   };
 
   return (
+    <>
     <div className="container mt-5">
       <ToastContainer />
       <h2 className="text-center mb-4">🎨 Artisan Dashboard</h2>
@@ -236,7 +238,11 @@ const ArtisanDashboard = () => {
           </div>
         ))
       )}
+    
     </div>
+    <Footer/>
+    </>
+    
   );
 };
 

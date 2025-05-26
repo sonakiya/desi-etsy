@@ -1,5 +1,6 @@
 const express = require("express");
 const connectDB = require("./config/db");
+
 const cors = require("cors");
 require("dotenv").config();
 
@@ -19,6 +20,15 @@ app.use("/api/auth",authRoutes)
 
 const productRoutes = require("./routes/productRoutes")
 app.use("/api/products",productRoutes) 
+
+// Add this route import
+const paymentRoutes = require('./routes/paymentRoutes');
+app.use('/api/payment', paymentRoutes);
+
+
+
+
+
 
 // ✅ Sample route
 app.get("/", (req, res) => {
