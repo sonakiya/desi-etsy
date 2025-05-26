@@ -1,7 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const Stripe = require("stripe");
-const stripe = Stripe("sk_test_51QmzMLP4zUkcOZhY8hpr7YEwiPbNKRO0eo6ZO3GowpX7a6UkSzwTbv42x8ZT7EnSWNgm4mXQZRRT1BxhclbYhivO00uQxzXxFL"); // 🔑 Your secret key
+const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
+
 
 router.post("/create-checkout-session", async (req, res) => {
   const { product } = req.body;

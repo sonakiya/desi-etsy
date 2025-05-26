@@ -4,7 +4,8 @@ import axios from "axios";
 import Footer from "../components/Footer";
 import { loadStripe } from "@stripe/stripe-js";
 
-const stripePromise = loadStripe("pk_test_51QmzMLP4zUkcOZhYxV84K2Ooi4ZaZjfuBSNkGQWdrYMKsnT07u0xi3MRsE2cA40Iv2cskX4aToygdxifppahm4P000h87id0Ju");
+const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY);
+
 
 import {
   Container,
